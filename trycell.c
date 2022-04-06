@@ -10,7 +10,7 @@ int trycell(int *x, int pos)
     (unsigned long) sp;
     sp = (unsigned long) stackTrace();
 
-    printf("Entering trycell, Stack pointer register sp: %lu\n", sp);
+    printf("Entering trycell, Stack pointer register sp: %#8x\n", sp);
 
     if (pos == 81) return 1;
     if (x[pos]) return trycell(x, pos + 1);
